@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e9ecef;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.testimonial-container{
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 40px 60px;
+    max-width: 800px;
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+}
+
+.fa-quote{
+    color: rgba(4, 151, 231, 1);
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+}
+
+.fa-quote-left{
+    left: 20px;
+}
+.fa-quote-right{
+    right: 20px;
+}
+
+.testimonial{
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.user .user-image{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border: 2px solid #476ce4;
+}
+
+.user .user-details{
+    margin-left: 15px;
+}
+
+.user .username{
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.user .role{
+    font-weight: normal;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.cont{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin-right: 0 auto;
+}
+
+.progress-bar{
+    background-color: #476ce4;
+    height: 4px;
+    width: 100%;
+    transform-origin: left;
+    animation: grow 10s linear infinite;
+    border-radius: 2px;
+}
+
+@keyframes grow {
+    0%{
+        transform: scaleX(0);
+    }
+}
+
+.navigation-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons button{
+    background-color: #476ce4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover{
+    background-color: #365cbf;
+}
+
+@media(max-width:768px){
+    .testimonial-container{
+        padding: 20px 0px;
+    }
+
+    .fa-quote{
+        display: none;
+    }
+}
